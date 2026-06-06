@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: HEALTHCARE_DB
+    schema: BRONZE
+    tables:
+      - name: patients
+        description: "Raw FHIR patient data from Synthea"
+      - name: encounters
+        description: "Raw FHIR encounter data from Synthea"
+      - name: conditions
+        description: "Raw FHIR condition data from Synthea"
+      - name: medications
+        description: "Raw FHIR medication data from Synthea"
